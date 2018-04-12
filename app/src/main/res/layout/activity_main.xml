@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:scaleType="fitXY">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/leftlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_elfordrug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="Elf or Drug?"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/isentress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:text="Isentress"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/isentress_choices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/isentress_elf"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/isentress_elf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elf" />
+
+                <RadioButton
+                    android:id="@+id/isentress_drug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/anakinra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:text="Anakinra"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/anakinra_choices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/anakinra_elf"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/anakinra_elf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elf" />
+
+                <RadioButton
+                    android:id="@+id/anakinra_drug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/celeborn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:text="Celeborn"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/celeborn_choices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/celeborn_elf"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/celeborn_elf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elf" />
+
+                <RadioButton
+                    android:id="@+id/celeborn_drug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/erestor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:text="Erestor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/erestor_choices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/erestor_elf"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/erestor_elf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elf" />
+
+                <RadioButton
+                    android:id="@+id/erestor_drug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/mellaril"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:text="Mellaril"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/mellaril_choices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mellaril"
+                android:checkedButton="@id/mellaril_elf"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/mellaril_elf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elf" />
+
+                <RadioButton
+                    android:id="@+id/mellaril_drug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/finarfin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:text="Finarfin"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/finarfin_elf"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/finarfin_elf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elf" />
+
+                <RadioButton
+                    android:id="@+id/finarfin_drug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drug" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:background="@color/colorPrimaryDark"></View>
+
+        <LinearLayout
+            android:id="@+id/rightlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="Check All Drug Names"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/gardasil_drug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:text="Gardasil"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/oropher_drug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:text="Oropher"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/imin_drug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:text="Imin"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/curufin_drug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="serif"
+                android:paddingBottom="8dp"
+                android:text="Curufin"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textviewrealname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Gandalf's Real Name?"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/gandalf_name_blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="serif"
+                android:hint="It's not Mithrandir!"
+                android:inputType="textCapWords" />
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:onClick="submitResults"
+                android:text="Submit Results" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
